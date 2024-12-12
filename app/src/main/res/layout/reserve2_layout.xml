@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".Reserve2Activity">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightBrown">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBrown"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Hamburger Menu -->
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:contentDescription="Menu Icon"
+                android:src="@drawable/ic_menu" />
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo_icon"
+                android:layout_width="316dp"
+                android:layout_height="83dp"
+                android:contentDescription="logo Icon"
+                android:src="@drawable/logo" />
+
+            <!-- Profile Icon -->
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="44dp"
+                android:layout_height="55dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="Profile Icon"
+                android:src="@drawable/ic_profile" />
+        </LinearLayout>
+
+        <!-- Page Content -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/reserve_background"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select table"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+
+
+
+            <!-- Table Layout -->
+            <LinearLayout
+                android:layout_width="420dp"
+                android:layout_height="832dp"
+                android:layout_weight="1"
+                android:background="@drawable/floor"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent">
+
+                        <GridLayout
+                            android:id="@+id/glso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="52dp"
+                            android:layout_marginEnd="8dp"
+                            android:columnCount="2"
+                            android:padding="8dp"
+                            android:rowCount="6"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <Button
+                                android:id="@+id/table_tso1"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSO1" />
+
+                            <Button
+                                android:id="@+id/table_tso2"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSO2" />
+
+                            <Button
+                                android:id="@+id/table_tso3"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSO3" />
+
+                            <Button
+                                android:id="@+id/table_tso4"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSO4" />
+
+
+                        </GridLayout>
+
+                        <GridLayout
+                            android:id="@+id/glsi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginBottom="108dp"
+                            android:columnCount="2"
+                            android:padding="8dp"
+                            android:rowCount="6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <Button
+                                android:id="@+id/table_tsi1"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSI1" />
+
+                            <Button
+                                android:id="@+id/table_tsi2"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSI2" />
+
+                            <Button
+                                android:id="@+id/table_tsi3"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSI3" />
+
+                            <Button
+                                android:id="@+id/table_tsi4"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSI4" />
+
+                            <Button
+                                android:id="@+id/table_tsi5"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSI5" />
+
+                            <Button
+                                android:id="@+id/table_tsi6"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TSI6" />
+
+                        </GridLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <GridLayout
+                            android:id="@+id/glgo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="48dp"
+                            android:columnCount="2"
+                            android:padding="8dp"
+                            android:rowCount="6"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <Button
+                                android:id="@+id/table_tgo1"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGO1" />
+
+                            <Button
+                                android:id="@+id/table_tgo2"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TG02" />
+
+                            <Button
+                                android:id="@+id/table_tgo3"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGO3" />
+
+                            <Button
+                                android:id="@+id/table_tgo4"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGO4" />
+
+
+                        </GridLayout>
+
+                        <GridLayout
+                            android:id="@+id/glgi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginBottom="108dp"
+                            android:columnCount="2"
+                            android:padding="8dp"
+                            android:rowCount="6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent">
+
+                            <Button
+                                android:id="@+id/table_tgi1"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGI1" />
+
+                            <Button
+                                android:id="@+id/table_tgi2"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGI2" />
+
+                            <Button
+                                android:id="@+id/table_tgi3"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGI3" />
+
+                            <Button
+                                android:id="@+id/table_tgi4"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGI4" />
+
+                            <Button
+                                android:id="@+id/table_tgi5"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGI5" />
+
+                            <Button
+                                android:id="@+id/table_tgi6"
+                                android:layout_width="77dp"
+                                android:layout_height="55dp"
+                                android:backgroundTint="#5D5555"
+                                android:text="TGI6" />
+
+                        </GridLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Table Buttons -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Pax Selection -->
+            <LinearLayout
+                android:layout_width="218dp"
+                android:layout_height="64dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/lightBrown"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="8dp"
+                    android:text="Number of pax"
+                    android:textColor="@color/brown"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_pax"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_background"
+                    android:entries="@array/pax_numbers" />
+            </LinearLayout>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/button_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Back"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/lightBrown"
+                    android:textColor="@color/brown" />
+
+
+                <Button
+                    android:id="@+id/button_reserve"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reserve Table"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/lightBrown"
+                    android:textColor="@color/brown" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
     <color name="brown">#4E342E</color>
     <color name="darkBrown">#3E2723</color>
     <color name="lightBrown">#D7CCC8</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
 
     <!-- Accent Colors -->
     <color name="neutral_green">#4CAF50</color>
     <color name="neutral_blue">#2196F3</color>
     <color name="neutral_yellow">#FFC107</color>
     <color name="neutral_red">#F44336</color>
+    <color name="red">#852118</color>
 
     <!-- Button Colors -->
     <color name="button_background">#795548</color>
     <color name="button_text">#FFFFFF</color>
+    <color name="selected_table">#503013</color>
+    <color name="default_table">#5D5555</color>
 
     <!-- Text Colors -->
     <color name="text_primary">#FFFFFF</color>

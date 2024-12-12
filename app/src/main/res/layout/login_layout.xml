@@ -12,7 +12,6 @@
         android:id="@+id/backgroundImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/bg"
         android:scaleType="centerCrop"
         android:src="@drawable/bg1"
         app:layout_constraintTop_toTopOf="parent"
@@ -48,8 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp"
-            tools:ignore="ExtraText">
+            android:padding="24dp">
 
             <!-- Login Title -->
             <TextView
@@ -67,7 +65,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/username"
+                android:text="Username"
                 android:textColor="#B09E6E"
                 android:textSize="16sp" />
 
@@ -75,20 +73,26 @@
                 android:id="@+id/usernameField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:autofillHints=""
                 android:background="@drawable/edittext_background"
-                android:hint="Enter your username"
-                android:inputType="text"
                 android:padding="12dp"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#757575" />
+                android:layout_marginBottom="16dp"
+                android:hint="Enter your username"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <TextView
+                android:id="@+id/usernameError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="12dp"
+                android:textColor="@color/red"/>
 
             <!-- Password Field -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/password"
+                android:text="Password"
                 android:textColor="#B09E6E"
                 android:textSize="16sp" />
 
@@ -96,43 +100,48 @@
                 android:id="@+id/passwordField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:autofillHints=""
                 android:background="@drawable/edittext_background"
-                android:hint="@string/enter_your_password"
-                android:inputType="textPassword"
                 android:padding="12dp"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#757575" />
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/passwordError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="12dp"
+                android:textColor="@color/red"/>
 
             <!-- Forgot Password -->
             <TextView
                 android:id="@+id/forgotPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/forget_password"
+                android:text="Forget password"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
-                android:layout_marginBottom="16dp"
-                tools:ignore="ExtraText" />
+                android:layout_marginBottom="16dp" />
 
             <!-- Login Button -->
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:text="Login"
                 android:backgroundTint="#B09E6E"
-                android:text="@string/login"
-                android:textColor="#311B92"
-                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp" />
 
             <!-- New Account Link -->
             <TextView
                 android:id="@+id/newAccountLink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/click_new_account"
+                android:text="Click here for new account"
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_marginBottom="8dp" />

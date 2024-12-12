@@ -1,7 +1,6 @@
 package com.example.neutralcafe;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageButton;
@@ -14,13 +13,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MenuListActivity extends AppCompatActivity {
+public class MenuList extends AppCompatActivity {
 
-    private DrawerLayout drawerLayout;
-    private ImageView menuIcon;
-    private NavigationView navigationView;
+    private final DrawerLayout drawerLayout;
+    private final ImageView menuIcon;
+    private final NavigationView navigationView;
     private ImageView menuImage;
-
     private final int[] menuImages = {
             R.drawable.me1,
             R.drawable.me2,
@@ -29,18 +27,16 @@ public class MenuListActivity extends AppCompatActivity {
     };
     private int currentImageIndex = 0;
 
+    public MenuList(DrawerLayout drawerLayout, ImageView menuIcon, NavigationView navigationView) {
+        this.drawerLayout = drawerLayout;
+        this.menuIcon = menuIcon;
+        this.navigationView = navigationView;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menulist_layout);
-
-        // Initialize Views
-        drawerLayout = findViewById(R.id.drawer_layout);
-        menuIcon = findViewById(R.id.menu_icon);
-        navigationView = findViewById(R.id.navigation_view);
-        menuImage = findViewById(R.id.menuImage);
-        ImageButton prevButton = findViewById(R.id.prevButton);
-        ImageButton nextButton = findViewById(R.id.nextButton);
 
         // Handle Menu Icon Click
         menuIcon.setOnClickListener(v -> drawerLayout.openDrawer(GravityCompat.START));
@@ -50,25 +46,16 @@ public class MenuListActivity extends AppCompatActivity {
             @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId(); // Get the selected item's ID
 
-                if (id == R.id.home) {
-                    startActivity(new Intent(MenuListActivity.this, HomePageActivity.class));
-                } else if (id == R.id.menu) {
-                    startActivity(new Intent(MenuListActivity.this, MenuListActivity.class));
-                } else if (id == R.id.reserve) {
-                    startActivity(new Intent(MenuListActivity.this, Reserve1Activity.class));
-                } else if (id == R.id.logout) {
-                    startActivity(new Intent(MenuListActivity.this, LoginActivity.class));
-                    finish(); // Finish current activity after logout
-                } else {
-                    // Handle other menu items (e.g., Feedback, My Reservation)
-                }
-
-                drawerLayout.closeDrawer(GravityCompat.START); // Close the drawer after selection
+                drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
         });
+
+        // Initialize Views
+        menuImage = findViewById(R.id.menuImage);
+        ImageButton prevButton = findViewById(R.id.prevButton);
+        ImageButton nextButton = findViewById(R.id.nextButton);
 
         // Set initial image
         menuImage.setImageResource(menuImages[currentImageIndex]);
@@ -90,3 +77,5 @@ public class MenuListActivity extends AppCompatActivity {
         });
     }
 }
+
+

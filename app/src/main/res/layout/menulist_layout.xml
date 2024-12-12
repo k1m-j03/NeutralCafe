@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuListActivity">
+    tools:context=".MenuList">
 
     <!-- Main Content -->
     <LinearLayout
@@ -17,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/brown"
+            android:background="@color/darkBrown"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="16dp">
@@ -25,8 +25,8 @@
             <!-- Hamburger Menu -->
             <ImageView
                 android:id="@+id/menu_icon"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
                 android:contentDescription="Menu Icon"
                 android:src="@drawable/ic_menu" />
 
@@ -38,16 +38,15 @@
                 android:contentDescription="logo Icon"
                 android:src="@drawable/logo" />
 
-
             <!-- Profile Icon -->
             <ImageView
                 android:id="@+id/profile_icon"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="44dp"
+                android:layout_height="55dp"
                 android:layout_gravity="end"
                 android:layout_weight="1"
                 android:contentDescription="Profile Icon"
-                android:src="@drawable/Profile Icon" />
+                android:src="@drawable/ic_profile" />
         </LinearLayout>
 
         <!-- Page Title -->
