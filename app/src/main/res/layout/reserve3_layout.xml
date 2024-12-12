@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reserve3Activity">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightBrown">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBrown"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Hamburger Menu -->
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:contentDescription="Menu Icon"
+                android:src="@drawable/ic_menu" />
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo_icon"
+                android:layout_width="316dp"
+                android:layout_height="83dp"
+                android:contentDescription="logo Icon"
+                android:src="@drawable/logo" />
+
+            <!-- Profile Icon -->
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="44dp"
+                android:layout_height="55dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="Profile Icon"
+                android:src="@drawable/ic_profile" />
+        </LinearLayout>
+
+        <!-- Page Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Details -->
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="559dp"
+                android:background="@drawable/reserve_background"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Detail Confirmation"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="Date"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/confirmation_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="confirmation_date"
+                    android:textColor="@color/brown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Meat"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/confirmation_meat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="meat"
+                    android:textColor="@color/brown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Table Number"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/confirmation_table_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="confirmation_table_number"
+                    android:textColor="@color/brown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Sitting area"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/confirmation_sitting_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="confirmation_sitting_area"
+                    android:textColor="@color/brown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Number Of Pax"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/confirmation_pax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="confirmation_pax"
+                    android:textColor="@color/brown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/button_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/brown"
+                    android:text="Back"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/button_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/brown"
+                    android:text="Confirm"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/darkBrown"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

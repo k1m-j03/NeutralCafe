@@ -26,8 +26,8 @@
             <!-- Hamburger Menu -->
             <ImageView
                 android:id="@+id/menu_icon"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
                 android:contentDescription="Menu Icon"
                 android:src="@drawable/ic_menu" />
 
@@ -43,7 +43,7 @@
             <ImageView
                 android:id="@+id/profile_icon"
                 android:layout_width="44dp"
-                android:layout_height="25dp"
+                android:layout_height="55dp"
                 android:layout_gravity="end"
                 android:layout_weight="1"
                 android:contentDescription="Profile Icon"
@@ -79,10 +79,11 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="8dp"
                     android:text="News"
-                    android:textSize="18sp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/news"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:contentDescription="News Image"
@@ -96,10 +97,11 @@
                     android:paddingTop="16dp"
                     android:paddingBottom="8dp"
                     android:text="Must Try"
-                    android:textSize="18sp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/mustTry"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:contentDescription="Must Try Image"
@@ -113,10 +115,11 @@
                     android:paddingTop="16dp"
                     android:paddingBottom="8dp"
                     android:text="Reservation Table"
-                    android:textSize="18sp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/reserveTable"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:contentDescription="Reservation Table Image"
@@ -144,6 +147,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/darkBrown"
-        app:menu="@menu/drawer_menu" />
+        android:textSize="20sp"
+        android:textColor="@color/lightBrown"
+        app:menu="@menu/drawer_menu"  />
 
 </androidx.drawerlayout.widget.DrawerLayout>

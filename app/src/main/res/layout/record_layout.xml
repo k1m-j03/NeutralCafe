@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/darkGrey"
+    android:elevation="2dp"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/record_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: --"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/record_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal: --"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/record_seating_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seating Area: --"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/record_number_of_pax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Pax: --"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,16 +14,66 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NeutralCafe"
         tools:targetApi="31">
-        <activity android:name=".LoginActivity" />
+
+        <!-- Main Activity (Launcher Activity) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+
+        <!-- Home Page Activity -->
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="true" />
+
+        <activity android:name=".MenuListActivity"
+            android:exported="true" />
+
+        <activity android:name=".Reserve1Activity"
+            android:exported="true" />
+
+        <activity android:name=".Reserve2Activity"
+            android:exported="true" />
+
+        <activity android:name=".Reserve3Activity"
+            android:exported="true" />
+
+        <activity android:name=".Reserve4Activity"
+            android:exported="true" />
+
+        <activity android:name=".TestApiActivity"
+            android:exported="true" />
+
+        <activity android:name=".MyReserveActivity"
+            android:exported="true" />
+
+        <activity android:name=".MyReserveDataActivity"
+            android:exported="true" />
+
+        <activity android:name=".EditDetailActivity"
+            android:exported="true" />
+
+        <activity android:name=".FeedbackrActivity"
+            android:exported="true" />
+
+        <activity android:name=".FeedbacksActivity"
+            android:exported="true" />
+
+
     </application>
 
 </manifest>

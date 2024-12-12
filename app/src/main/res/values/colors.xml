@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors -->
+    <color name="black">#FF000000</color>
+    <color name="darkGrey">#2E2828</color>
+    <color name="lightGrey">#544D4D</color>
+    <color name="white">#FFFFFFFF</color>
     <color name="brown">#4E342E</color>
     <color name="darkBrown">#3E2723</color>
     <color name="lightBrown">#D7CCC8</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
 
     <!-- Accent Colors -->
     <color name="neutral_green">#4CAF50</color>
     <color name="neutral_blue">#2196F3</color>
     <color name="neutral_yellow">#FFC107</color>
+    <color name="orange">#EB6C3F</color>
     <color name="neutral_red">#F44336</color>
+    <color name="red">#852118</color>
 
     <!-- Button Colors -->
     <color name="button_background">#795548</color>
     <color name="button_text">#FFFFFF</color>
+    <color name="selected_table">#503013</color>
+    <color name="default_table">#5D5555</color>
 
     <!-- Text Colors -->
     <color name="text_primary">#FFFFFF</color>
@@ -24,4 +29,11 @@
     <!-- Background Colors -->
     <color name="background_primary">#FFFFFF</color>
     <color name="background_secondary">#FAFAFA</color>
+    <color name="default_button_background">#E6D9C5</color>
+    <color name="selected_button_background">#816842</color>
+
+    <color name="beige">#E0D3B8</color>
+    <color name="dark_brown">#4A3222</color>
+    <color name="dark_gray">#7B7B7B</color>
+    <color name="green">#6AA84F</color>
 </resources>

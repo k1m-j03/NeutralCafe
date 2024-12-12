@@ -1,10 +1,9 @@
 <resources>
-    <string name="app_name">NeutralCafe</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="bg">background</string>
-    <string name="forget_password">Forget password</string>
+    <string name="app_name">Reservetable</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="don_t_miss_out_on_an_unforgettable_dining_experience_with_our_limited_seating_it_s_best_to_book_your_table_in_advance">Don’t miss out on an unforgettable dining experience. With our limited seating, it’s best to book your table in advance.</string>
+    <string name="save_your_spot">Save Your Spot!</string>
+    <string name="discrition_main">Don’t miss out on an unforgettable dining experience. With our limited seating, it’s best to book your table in advance.</string>
     <string name="login">Login</string>
-    <string name="click_new_account">Click here for new account</string>
-    <string name="enter_your_password">Enter your password</string>
 </resources>
