@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pax_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <color name="background_primary">#FFFFFF</color>
+    <color name="background_secondary">#FAFAFA</color>
+    <color name="beige">#E0D3B8</color>
+    <color name="black">#FF000000</color>
+    <color name="brown">#4E342E</color>
+    <color name="button_background">#795548</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="darkBrown">#3E2723</color>
+    <color name="darkGrey">#2E2828</color>
+    <color name="dark_brown">#4A3222</color>
+    <color name="dark_gray">#7B7B7B</color>
+    <color name="default_button_background">#E6D9C5</color>
+    <color name="default_table">#5D5555</color>
+    <color name="green">#6AA84F</color>
+    <color name="lightBrown">#D7CCC8</color>
+    <color name="lightGrey">#544D4D</color>
+    <color name="neutral_blue">#2196F3</color>
+    <color name="neutral_green">#4CAF50</color>
+    <color name="neutral_red">#F44336</color>
+    <color name="neutral_yellow">#FFC107</color>
+    <color name="orange">#EB6C3F</color>
+    <color name="red">#852118</color>
+    <color name="selected_button_background">#816842</color>
+    <color name="selected_table">#503013</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#BDBDBD</color>
+    <color name="white">#FFFFFFFF</color>
+    <item name="password" type="id"/>
+    <item name="username" type="id"/>
+    <string name="app_name">Reservetable</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="discrition_main">Don’t miss out on an unforgettable dining experience. With our limited seating, it’s best to book your table in advance.</string>
+    <string name="don_t_miss_out_on_an_unforgettable_dining_experience_with_our_limited_seating_it_s_best_to_book_your_table_in_advance">Don’t miss out on an unforgettable dining experience. With our limited seating, it’s best to book your table in advance.</string>
+    <string name="login">Login</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="save_your_spot">Save Your Spot!</string>
+    <style name="Base.Theme.NeutralCafe" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.NeutralCafe" parent="Base.Theme.NeutralCafe"/>
+</resources>

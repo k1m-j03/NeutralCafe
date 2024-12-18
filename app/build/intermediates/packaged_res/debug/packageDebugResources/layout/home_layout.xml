@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkBrown"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Hamburger Menu -->
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:contentDescription="Menu Icon"
+                android:src="@drawable/ic_menu" />
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo_icon"
+                android:layout_width="316dp"
+                android:layout_height="83dp"
+                android:contentDescription="logo Icon"
+                android:src="@drawable/logo" />
+
+            <!-- Profile Icon -->
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="44dp"
+                android:layout_height="55dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="Profile Icon"
+                android:src="@drawable/ic_profile" />
+        </LinearLayout>
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/edittext_background"
+            android:hint="Search"
+            android:padding="12dp" />
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightBrown"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- News Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="News"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/news"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="News Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/n1" />
+
+                <!-- Must Try Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Must Try"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/mustTry"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="Must Try Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/f1" />
+
+                <!-- Reservation Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Reservation Table"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/reserveTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="Reservation Table Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/v1" />
+
+                <Button
+                    android:id="@+id/reserve_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/brown"
+                    android:padding="12dp"
+                    android:text="Reserve Now"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/darkBrown"
+        android:textSize="20sp"
+        android:textColor="@color/lightBrown"
+        app:menu="@menu/drawer_menu"  />
+
+</androidx.drawerlayout.widget.DrawerLayout>

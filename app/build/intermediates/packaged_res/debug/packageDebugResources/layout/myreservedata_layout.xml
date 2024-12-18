@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyReserveDataActivity"
+    android:background="@color/lightBrown">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/darkBrown"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:contentDescription="menu_icon_description"
+                    android:src="@drawable/ic_menu" />
+
+                <ImageView
+                    android:id="@+id/logo_icon"
+                    android:layout_width="316dp"
+                    android:layout_height="83dp"
+                    android:contentDescription="logo_icon_description"
+                    android:src="@drawable/logo"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/profile_icon"
+                    android:layout_width="44dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="profile_icon_description"
+                    android:src="@drawable/ic_profile" />
+            </LinearLayout>
+
+            <!-- Reservation Details Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_border"
+                android:padding="16dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="reservation complete"
+                    android:textColor="@color/black"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thank you"
+                    android:textColor="@color/darkBrown"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#F4BFB7"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/customer_name_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Name"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:id="@+id/customer_phone_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:id="@+id/meal_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meal"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:id="@+id/seating_area_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seating Area"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:id="@+id/table_size_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:text="Table Size"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:id="@+id/date_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/edit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/neutral_blue"
+                    android:text="Edit"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+            <!-- Navigation Buttons Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/brown"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/red"
+                    android:text="Delete"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

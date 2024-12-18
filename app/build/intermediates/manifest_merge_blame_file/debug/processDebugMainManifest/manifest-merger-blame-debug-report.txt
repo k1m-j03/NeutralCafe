@@ -1,0 +1,235 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.neutralcafe"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:7:5-77
+12-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:7:22-74
+13
+14    <permission
+14-->[androidx.core:core:1.13.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\8fdf1c3918490dc53011340d5805e273\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.neutralcafe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.13.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\8fdf1c3918490dc53011340d5805e273\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.13.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\8fdf1c3918490dc53011340d5805e273\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.neutralcafe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.13.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\8fdf1c3918490dc53011340d5805e273\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.13.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\8fdf1c3918490dc53011340d5805e273\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:9:5-82:19
+21        android:allowBackup="true"
+21-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:10:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.13.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\8fdf1c3918490dc53011340d5805e273\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:11:9-65
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:12:9-54
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:13:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:14:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:15:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:16:9-35
+31        android:testOnly="true"
+32        android:theme="@style/Theme.NeutralCafe" >
+32-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:17:9-49
+33
+34        <!-- Main Activity (Launcher Activity) -->
+35        <activity
+35-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:21:9-28:20
+36            android:name="com.example.neutralcafe.MainActivity"
+36-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:22:13-41
+37            android:exported="true" >
+37-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:23:13-36
+38            <intent-filter>
+38-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:24:13-27:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:25:17-69
+39-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:25:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:26:17-77
+41-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:26:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <!-- Login Activity -->
+46        <activity
+46-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:31:9-33:39
+47            android:name="com.example.neutralcafe.LoginActivity"
+47-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:32:13-42
+48            android:exported="true" />
+48-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:33:13-36
+49
+50        <!-- Register Activity -->
+51        <activity
+51-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:36:9-38:39
+52            android:name="com.example.neutralcafe.RegisterActivity"
+52-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:37:13-45
+53            android:exported="true" />
+53-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:38:13-36
+54
+55        <!-- Home Page Activity -->
+56        <activity
+56-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:41:9-43:39
+57            android:name="com.example.neutralcafe.HomePageActivity"
+57-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:42:13-45
+58            android:exported="true" />
+58-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:43:13-36
+59        <activity
+59-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:45:9-47:39
+60            android:name="com.example.neutralcafe.ProfileActivity"
+60-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:46:13-44
+61            android:exported="true" />
+61-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:47:13-36
+62        <activity
+62-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:49:9-50:39
+63            android:name="com.example.neutralcafe.MenuListActivity"
+63-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:49:19-51
+64            android:exported="true" />
+64-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:50:13-36
+65        <activity
+65-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:52:9-53:39
+66            android:name="com.example.neutralcafe.Reserve1Activity"
+66-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:52:19-51
+67            android:exported="true" />
+67-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:53:13-36
+68        <activity
+68-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:55:9-56:39
+69            android:name="com.example.neutralcafe.Reserve2Activity"
+69-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:55:19-51
+70            android:exported="true" />
+70-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:56:13-36
+71        <activity
+71-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:58:9-59:39
+72            android:name="com.example.neutralcafe.Reserve3Activity"
+72-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:58:19-51
+73            android:exported="true" />
+73-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:59:13-36
+74        <activity
+74-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:61:9-62:39
+75            android:name="com.example.neutralcafe.Reserve4Activity"
+75-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:61:19-51
+76            android:exported="true" />
+76-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:62:13-36
+77        <activity
+77-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:64:9-65:39
+78            android:name="com.example.neutralcafe.TestApiActivity"
+78-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:64:19-50
+79            android:exported="true" />
+79-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:65:13-36
+80        <activity
+80-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:67:9-68:39
+81            android:name="com.example.neutralcafe.MyReserveActivity"
+81-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:67:19-52
+82            android:exported="true" />
+82-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:68:13-36
+83        <activity
+83-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:70:9-71:39
+84            android:name="com.example.neutralcafe.MyReserveDataActivity"
+84-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:70:19-56
+85            android:exported="true" />
+85-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:71:13-36
+86        <activity
+86-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:73:9-74:39
+87            android:name="com.example.neutralcafe.EditDetailActivity"
+87-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:73:19-53
+88            android:exported="true" />
+88-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:74:13-36
+89        <activity
+89-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:76:9-77:39
+90            android:name="com.example.neutralcafe.FeedbackrActivity"
+90-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:76:19-52
+91            android:exported="true" />
+91-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:77:13-36
+92        <activity
+92-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:79:9-80:39
+93            android:name="com.example.neutralcafe.FeedbacksActivity"
+93-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:79:19-52
+94            android:exported="true" />
+94-->C:\Users\kimjo\Documents\New folder\software engineering\NeutralCafe\app\src\main\AndroidManifest.xml:80:13-36
+95
+96        <provider
+96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\2976d70c1c9e2b094c3b3c9f5f64c5ac\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+97            android:name="androidx.startup.InitializationProvider"
+97-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\2976d70c1c9e2b094c3b3c9f5f64c5ac\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+98            android:authorities="com.example.neutralcafe.androidx-startup"
+98-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\2976d70c1c9e2b094c3b3c9f5f64c5ac\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+99            android:exported="false" >
+99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\2976d70c1c9e2b094c3b3c9f5f64c5ac\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+100            <meta-data
+100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\2976d70c1c9e2b094c3b3c9f5f64c5ac\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+101-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\2976d70c1c9e2b094c3b3c9f5f64c5ac\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+102                android:value="androidx.startup" />
+102-->[androidx.emoji2:emoji2:1.3.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\2976d70c1c9e2b094c3b3c9f5f64c5ac\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+103            <meta-data
+103-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kimjo\.gradle\caches\8.9\transforms\382a7079801949d13eca83ea13ab56cc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+104-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kimjo\.gradle\caches\8.9\transforms\382a7079801949d13eca83ea13ab56cc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+105                android:value="androidx.startup" />
+105-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\kimjo\.gradle\caches\8.9\transforms\382a7079801949d13eca83ea13ab56cc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+106            <meta-data
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+108                android:value="androidx.startup" />
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+109        </provider>
+110
+111        <receiver
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+112            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+113            android:directBootAware="false"
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+114            android:enabled="true"
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+115            android:exported="true"
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+116            android:permission="android.permission.DUMP" >
+116-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+118                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+118-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+121                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+122            </intent-filter>
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+124                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+124-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+124-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+125            </intent-filter>
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+127                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+127-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+127-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\kimjo\.gradle\caches\8.9\transforms\ed9cfd3a4a3ab9fe78cdc6a340361771\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+128            </intent-filter>
+129        </receiver>
+130    </application>
+131
+132</manifest>

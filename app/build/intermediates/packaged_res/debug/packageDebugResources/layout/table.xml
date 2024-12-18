@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="80dp"
+        android:layout_weight="1"
+        android:background="@drawable/floor"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="210dp"
+                android:layout_height="match_parent">
+
+                <GridLayout
+                    android:id="@+id/glso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:columnCount="2"
+                    android:padding="8dp"
+                    android:rowCount="6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Button
+                        android:id="@+id/table_tso1"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSO1" />
+
+                    <Button
+                        android:id="@+id/table_tso2"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSO2" />
+
+                    <Button
+                        android:id="@+id/table_tso3"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSO3" />
+
+                    <Button
+                        android:id="@+id/table_tso4"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSO4" />
+
+
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/glsi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginBottom="108dp"
+                    android:columnCount="2"
+                    android:padding="8dp"
+                    android:rowCount="6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <Button
+                        android:id="@+id/table_tsi1"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSI1" />
+
+                    <Button
+                        android:id="@+id/table_tsi2"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSI2" />
+
+                    <Button
+                        android:id="@+id/table_tsi3"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSI3" />
+
+                    <Button
+                        android:id="@+id/table_tsi4"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSI4" />
+
+                    <Button
+                        android:id="@+id/table_tsi5"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSI5" />
+
+                    <Button
+                        android:id="@+id/table_tsi6"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TSI6" />
+
+                </GridLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <GridLayout
+                    android:id="@+id/glgo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="48dp"
+                    android:columnCount="2"
+                    android:padding="8dp"
+                    android:rowCount="6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Button
+                        android:id="@+id/table_tgo1"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGO1" />
+
+                    <Button
+                        android:id="@+id/table_tgo2"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TG02" />
+
+                    <Button
+                        android:id="@+id/table_tgo3"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGO3" />
+
+                    <Button
+                        android:id="@+id/table_tgo4"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGO4" />
+
+
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/glgi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="108dp"
+                    android:columnCount="2"
+                    android:padding="8dp"
+                    android:rowCount="6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <Button
+                        android:id="@+id/table_tgi1"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGI1" />
+
+                    <Button
+                        android:id="@+id/table_tgi2"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGI2" />
+
+                    <Button
+                        android:id="@+id/table_tgi3"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGI3" />
+
+                    <Button
+                        android:id="@+id/table_tgi4"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGI4" />
+
+                    <Button
+                        android:id="@+id/table_tgi5"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGI5" />
+
+                    <Button
+                        android:id="@+id/table_tgi6"
+                        android:layout_width="77dp"
+                        android:layout_height="55dp"
+                        android:backgroundTint="#5D5555"
+                        android:text="TGI6" />
+
+                </GridLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
