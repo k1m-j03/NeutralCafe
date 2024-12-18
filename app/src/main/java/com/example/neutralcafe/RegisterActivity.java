@@ -16,7 +16,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private DatabaseCust databaseCust;
     private EditText usernameField, nameField, emailField, passwordField, phoneNumberField;
-    private TextView usernameError, emailError, passwordError, phoneError;
+    private TextView usernameError, emailError, passwordError, phoneError, haveAccountLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,9 @@ public class RegisterActivity extends AppCompatActivity {
         emailError = findViewById(R.id.emailError);
         passwordError = findViewById(R.id.passwordError);
         phoneError = findViewById(R.id.phoneError);
-        TextView newAccountLink = findViewById(R.id.haveAccountLink);
 
         Button registerButton = findViewById(R.id.registerButton);
+        TextView newAccountLink = findViewById(R.id.haveAccountLink);
 
         // Handle Register button click
         registerButton.setOnClickListener(v -> {
@@ -54,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             if (validateInput(username, name, email, password, phoneNumber)) {
                 // Store user data in SQLite
-                if (storeUserData(username, name, email, hashPassword(password), phoneNumber)) {
+                if (storeUserData(username, name, email, password, phoneNumber)) {
                     Toast.makeText(RegisterActivity.this, "Registration successful!", Toast.LENGTH_SHORT).show();
                     redirectToLoginPage();
                 } else {
@@ -63,12 +63,13 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        // Handle "have Account" link
+        // Handle "New Account" link
         newAccountLink.setOnClickListener(v -> {
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         });
+
 
     }
 
@@ -167,7 +168,7 @@ public class RegisterActivity extends AppCompatActivity {
         values.put(DatabaseCust.COLUMN_USERNAME, username);
         values.put(DatabaseCust.COLUMN_NAME, name);
         values.put(DatabaseCust.COLUMN_EMAIL, email);
-        values.put(DatabaseCust.COLUMN_PASSWORD, hashPassword(password));
+        values.put(DatabaseCust.COLUMN_PASSWORD, password);
         values.put(DatabaseCust.COLUMN_PHONE, phoneNumber);
 
         long newRowId = db.insert(DatabaseCust.TABLE_USER, null, values);
@@ -179,20 +180,5 @@ public class RegisterActivity extends AppCompatActivity {
         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    private String hashPassword(String password) {
-        try {
-            java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA-256");
-            byte[] array = md.digest(password.getBytes());
-            StringBuilder sb = new StringBuilder();
-            for (byte b : array) {
-                sb.append(String.format("%02x", b));
-            }
-            return sb.toString();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 }
